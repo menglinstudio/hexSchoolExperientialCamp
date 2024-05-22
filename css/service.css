@@ -862,6 +862,11 @@ body.js-menu-active {
 .faq-item .fz-5 {
   color: #5B5B5B;
 }
+@media (width < 1328px) {
+  .faq-item .fz-5 {
+    font-size: 16px;
+  }
+}
 
 .footer {
   padding: 80px 0;
