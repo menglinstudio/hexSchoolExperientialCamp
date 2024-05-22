@@ -699,8 +699,18 @@ body.js-menu-active {
 .price-list .fz-3 {
   color: #5B5B5B;
 }
+@media (width < 1328px) {
+  .price-list .fz-3 {
+    font-size: 20px;
+  }
+}
 .price-list .fz-2 {
   color: #1E1E1E;
+}
+@media (width < 1328px) {
+  .price-list .fz-2 {
+    font-size: 20px;
+  }
 }
 .price-list .fz-6 {
   color: #5B5B5B;
