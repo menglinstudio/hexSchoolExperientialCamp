@@ -1,0 +1,162 @@
+// 全站設定
+@import _variable
+@import _mixin
+@import _base
+
+// header
+@import section/_header
+
+// section / service
+@import section/_service
+
+.sec-service
+  @include sz-mobile
+    padding: 40px 0 80px
+
+// section / process
+.sec-process
+  background-image: url(../image/process-bg.png)
+  background-size: cover
+  background-position: center
+  @include sz-mobile
+    background-size: 100% 100%
+
+.process-list
+  width: 100%
+  max-width: 655px
+
+.process-list
+  .process-item
+    display: flex
+    align-items: center
+    gap: 32px
+    width: 100%
+    padding: 24px 32px
+    margin-bottom: 16px
+    border-radius: 4px
+    background: $cl-basic-700
+    box-shadow: 0 0 0 1px inset $cl-basic-500
+    @include sz-mobile
+      flex-direction: column
+      gap: 8px
+      padding: 24px 24px 48px
+
+.process-list
+  .process-content
+    width: 100%
+
+.process-list
+  .process-number
+    font-family: Tourney, Noto Sans, Noto Sans TC, sans-serif
+    font-size: 72px
+    font-weight: 400
+    line-height: 1.2
+    color: $cl-basic-500
+  .fz-h3
+    color: $cl-basic-0
+    margin-bottom: 8px
+    @include sz-mobile
+      font-size: 24px
+      text-align: center
+  .fz-5
+    color: $cl-basic-300
+
+.process-list
+  li
+    @include flex(column, center, center)
+    &::after
+      content: "arrow_downward"
+      display: block
+      font-family: Material Symbols Rounded
+      font-size: 32px
+      line-height: 1
+      color: $cl-basic-600
+      margin-bottom: 16px
+    &:last-child
+      margin-bottom: 0
+      &::after
+        display: none
+
+// section / price
+.price-list
+  display: flex
+  gap: 24px
+  width: 100%
+  @include sz-mobile
+    flex-direction: column
+
+.price-list
+  li
+    display: flex
+    align-items: center
+    gap: 8px
+    padding: 32px
+    border-radius: 8px
+    background: $cl-basic-100
+    box-shadow: 0 4px 8px 0 rgba($cl-basic-900,0.08)
+    flex-grow: 1
+    @include sz-mobile
+      padding: 24px 32px
+
+.price-list
+  img
+    @include sz-mobile
+      width: 40px
+      height: 40px
+
+.price-list
+  .fz-3
+    color: $cl-basic-600
+  .fz-2
+    color: $cl-basic-800
+  .fz-6
+    color: $cl-basic-600
+
+.price-tag-divider
+  flex-grow: 1
+  height: 1px
+  background: $cl-basic-400
+  margin: 0 8px
+
+
+// section / portfolio
+@import section/_portfolio
+
+.sec-portfolio
+  background: $cl-basic-100
+
+// section / faq
+.faq-list
+  display: flex
+  flex-wrap: wrap
+  gap: 24px
+  max-width: 1076px
+  @include sz-mobile
+    flex-direction: column
+
+.faq-item
+  display: flex
+  flex-direction: column
+  gap: 16px
+  flex-grow: 1
+  width: calc((100% - 24px) / 2)
+  padding: 24px
+  border-radius: 8px
+  box-shadow: 0 0 0 1px inset $cl-basic-300
+  @include sz-mobile
+    width: 100%
+
+.faq-item
+  .fz-h4
+    color: $cl-basic-700
+    @include sz-mobile
+      font-size: 20px
+  .fz-5
+    color: $cl-basic-600
+
+
+// footer
+@import section/_footer
+
+// control
+@import _control

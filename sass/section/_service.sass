@@ -1,0 +1,33 @@
+@import ../_variable
+@import ../_mixin
+
+.sec-service
+  .gl-container
+    @include flex(column, center, center)
+    gap: 80px
+    @include sz-mobile
+      gap: 40px
+
+.service-list
+  @include flex(row, center, center)
+  gap: 24px
+  width: 100%
+  @include sz-mobile
+    flex-direction: column
+
+.service-list
+  li
+    @include flex(column, center, center)
+    gap: 24px
+    width: 100%
+    aspect-ratio: 1 / 1
+    padding: 20px 30px
+    border-radius: 16px
+    color: $cl-basic-0
+    background-image: url(../image/service-item-bg.png)
+    background-size: cover
+    background-position: center
+    @include sz-mobile
+      max-width: 306px
+      font-size: 24px
+      line-height: 1.2

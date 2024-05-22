@@ -1,0 +1,54 @@
+@import ../_variable
+@import ../_mixin
+
+// footer
+.footer
+  padding: 80px 0
+  background-color: $cl-basic-100
+  background-image: url(../image/footer-bg-lg.png)
+  background-size: cover
+  background-position: center
+  @include sz-mobile
+    padding: 40px 12px calc( 40px + env(safe-area-inset-bottom) )
+    background-image: url(../image/footer-bg-sm.png)
+
+.footer
+  .gl-container
+    @include flex(row, space-between, center)
+    @include sz-mobile
+      flex-direction: column
+      gap: 40px
+
+.footer-content
+  @include flex(column, flex-start, start)
+  gap: 24px
+  @include sz-mobile
+    align-items: center
+    width: 100%
+  p
+    color: $cl-basic-700
+  a
+    color: $cl-basic-500
+
+.footer-btn-wrap
+  @include flex(column, flex-start, center)
+  width: 100%
+  max-width: 316px
+  gap: 24px
+  @include sz-mobile
+    max-width: 306px
+
+.footer-btn
+  @include flex(row, flex-start, center)
+  width: 100%
+  gap: 8px
+  padding: 8px 24px
+  background: $cl-basic-0
+  border-radius: 8px
+  box-shadow: 0 0 0 1px inset $cl-basic-400
+  color: $cl-basic-700
+  cursor: pointer
+  &.main
+    background: $cl-basic-900
+    color: $cl-basic-0
+    box-shadow: none

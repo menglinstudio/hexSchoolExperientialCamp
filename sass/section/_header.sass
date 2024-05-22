@@ -1,0 +1,99 @@
+@import _variable
+@import _mixin
+
+
+// header
+body
+  &.js-menu-active
+    overflow: hidden
+    height: 100%
+
+.navbar
+  box-shadow: 0 -1px 0 0 inset $cl-basic-200
+  background-color: $cl-basic-0
+  position: sticky
+  top: 0
+  z-index: 10
+
+.navbar
+  .gl-container
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    padding: 32px 0
+    @include sz-mobile
+      height: 56px
+      padding: 8px 12px
+
+// 確保 .nav-menu 在桌機下可以置中
+.nav-logo-wrap, .nav-btn-wrap
+  flex-basis: 100px
+  display: flex
+  align-items: center
+
+.nav-logo
+    display: block
+    cursor: pointer
+
+.nav-menu
+  display: flex
+  justify-content: center
+  align-items: center
+  gap: 40px
+  &.active
+    display: flex
+  @include sz-mobile
+    display: none
+    width: 100%
+    min-width: 100%
+    flex-direction: column
+    align-self: start
+    gap: 24px
+    background: $cl-basic-0
+    padding: 40px 0
+    &.active
+      display: flex
+      position: fixed
+      top: 56px
+      left: 0
+      z-index: 10
+
+.nav-menu-btn
+  display: block
+  color: $cl-basic-900
+  padding: 4px 8px
+  position: relative
+  &:hover, &.active
+    display: flex
+    align-items: center
+    font-weight: 700
+    &::before, &::after
+      content: ""
+      display: inline-block
+      width: 9px
+      height: 32px
+      background-image: url(../image/nav-item-deco-left.png)
+      background-size: contain
+      background-repeat: no-repeat
+      position: absolute
+      left: -1px
+    &::after
+      background-image: url(../image/nav-item-deco-right.png)
+      left: auto
+      right: -1px
+
+.nav-btn-wrap
+  justify-content: flex-end
+
+.nav-btn
+  width: 40px
+  height: 40px
+  vertical-align: center
+  cursor: pointer
+  .material-symbols-rounded
+    display: none
+    font-size: 40px
+    line-height: 40px
+    &.active
+      display: block
+

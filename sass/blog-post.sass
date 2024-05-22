@@ -1,0 +1,129 @@
+// 全站設定
+@import _variable
+@import _mixin
+@import _base
+
+// header
+@import section/_header
+
+// section / catalog
+@import section/_catalog
+
+// section / article
+.sec-blog-content
+  display: flex
+  flex-direction: column
+  gap: 80px
+  @include sz-mobile
+    padding-top: 0
+
+.sec-blog-content
+  .gl-container
+    flex-direction: row
+    align-items: flex-start
+    gap: 134px
+    @include sz-mobile
+      flex-direction: column-reverse
+      gap: 24px
+
+.blog-content
+  width: 100%
+
+.blog-content-title
+  flex-grow: 1
+  margin-bottom: 64px
+  @include sz-mobile
+    margin-bottom: 24px
+  p
+    display: flex
+    gap: 8px
+    color: $cl-basic-500
+    @include sz-mobile
+      justify-content: space-between
+  h1
+    color: $cl-basic-700
+    text-align: center
+    margin-top: 40px
+    @include sz-mobile
+      font-size: 24px
+      margin-top: 16px
+  h2
+    color: $cl-basic-700
+    text-align: center
+    margin-top: 24px
+    @include sz-mobile
+      font-size: 16px
+      margin-top: 16px
+
+.blog-content-paragraph
+  h3
+    @include sz-mobile
+      font-size: 20px
+  h3,p
+    color: $cl-basic-700
+    margin-bottom: 40px
+    @include sz-mobile
+      margin-bottom: 32px
+  p + h3
+    margin-bottom: 16px
+  p:last-child
+    margin-bottom: 0
+
+.blog-album
+  display: flex
+  flex-wrap: wrap
+  gap: 24px
+  margin-bottom: 40px
+  @include sz-mobile
+    flex-direction: column
+    gap: 32px
+    margin-bottom: 32px
+
+.blog-album-img
+  width: calc( ( 100% - 24px ) / 2)
+  display: flex
+  flex-direction: column
+  gap: 8px
+  object-fit: cover
+  @include sz-mobile
+    width: 100%
+  .fz-6
+    color: $cl-basic-600
+    text-align: center
+
+.blog-article-divider
+  display: block
+  width: 100%
+  height: 1px
+  background: $cl-basic-200
+
+// section / article
+@import section/_carousel
+
+.sec-carousel
+  padding-top: 0
+  .gl-container
+    gap: 40px
+    padding-top: 120px
+    border-top: 1px solid $cl-basic-400
+
+.sec-carousel
+  .fz-h4
+    color: $cl-basic-700
+    width: 100%
+    @include sz-mobile
+      text-align: center
+
+.article-content
+  @include sz-mobile
+    flex-direction: column-reverse
+
+.article-info
+  @include sz-mobile
+    flex-direction: row-reverse
+
+// footer
+@import section/_footer
+
+// control
+@import _control

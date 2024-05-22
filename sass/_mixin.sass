@@ -1,0 +1,16 @@
+@mixin flex($flex-direction, $justify-content, $align-items)
+  display: flex
+  flex-direction: $flex-direction
+  justify-content: $justify-content
+  align-items: $align-items
+
+@mixin sz-mobile
+  @media (width < $media-query-desktop) 
+    @content
+
+@mixin ellipsis-line($line)
+  display: -webkit-box
+  -webkit-line-clamp: $line
+  -webkit-box-orient: vertical
+  overflow: hidden
+  text-overflow: ellipsis

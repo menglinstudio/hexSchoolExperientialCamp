@@ -1,0 +1,52 @@
+@import ../_variable
+@import ../_mixin
+  
+.sec-portfolio
+  .gl-container
+    gap: 72px
+
+.portfolio-list
+  display: flex
+  flex-wrap: wrap
+  width: 100%
+  gap: 80px 24px
+  @include sz-mobile
+    flex-direction: column
+    gap: 48px
+
+.portfolio-list
+  li
+    width: calc( ( 100% - 24px ) / 2 )
+    @include sz-mobile
+      width: 100%
+
+.portfolio-card
+  display: block
+  cursor: pointer
+
+.portfolio-img
+  display: block
+  width: 100%
+  border-radius: 8px
+  border: 1px solid $cl-basic-200
+  object-fit: cover
+  margin-bottom: 16px  
+
+.portfolio-content-wrap
+  padding: 0 16px
+
+.portfolio-content
+  margin-bottom: 24px
+  .fz-h3
+    color: $cl-basic-700
+    margin-bottom: 8px
+    @include sz-mobile
+      font-size: 20px
+  .fz-6
+    color: $cl-basic-500
+    
+.portfolio-tag-wrap
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  gap: 16px

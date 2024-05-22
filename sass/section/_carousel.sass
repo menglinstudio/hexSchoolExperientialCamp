@@ -1,0 +1,70 @@
+@import ../_variable
+@import ../_mixin
+
+.carousel
+  overflow: hidden
+
+.carousel-inner 
+  display: flex
+  align-self: start
+  transition: transform 0.5s ease-in-out
+  width: 500%
+  @include sz-mobile
+    flex-direction: column
+    gap: 48px
+    width: 100%
+
+.carousel-item 
+  width: calc( ( 100% / 5 - 24px * 2 ) / 3)
+  margin-right: 24px
+  &:nth-child(3n)
+    margin-right: 0
+  @include sz-mobile
+    width: 100%
+    margin: 0
+    display: none
+    &:nth-child(1), &:nth-child(2), &:nth-child(3)
+      display: block
+
+.article-wrap
+  img
+    width: 100%
+    object-fit: cover
+    border-radius: 16px
+    border: 1px solid $cl-basic-200
+    margin-bottom: 16px
+    @include sz-mobile
+      width: 100%
+  .fz-h5
+    color: $cl-basic-700
+  .fz-6
+    color: $cl-basic-700
+
+.article-content
+  display: flex
+  flex-direction: column
+  gap: 16px
+  padding: 0 8px
+
+.article-info
+  display: flex
+  justify-content: space-between
+  align-items: center
+  width: 100%
+
+.carousel-indicators
+  display: flex
+  justify-content: center
+  gap: 16px
+  margin-top: -40px
+  li
+    display: block
+    width: 12px
+    aspect-ratio: 1 / 1
+    border-radius: 6px
+    background: $cl-basic-300
+    cursor: pointer
+    &.active
+      background: $cl-basic-900
+
+  

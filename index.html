@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>首頁｜Noel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/all.js"></script>
+    <script src="js/carousel.js"></script>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="gl-container">
+        <div class="nav-logo-wrap">
+          <a href="index.html" class="nav-logo">
+            <img src="image/logo.svg" alt="" />
+          </a>
+        </div>
+        <ul class="nav-menu">
+          <li>
+            <a href="index.html" class="nav-menu-btn fz-6 active">首頁</a>
+          </li>
+          <li>
+            <a href="portfolio.html" class="nav-menu-btn fz-6">作品集</a>
+          </li>
+          <li>
+            <a href="service.html" class="nav-menu-btn fz-6">服務項目</a>
+          </li>
+          <li>
+            <a href="blog.html" class="nav-menu-btn fz-6">部落格</a>
+          </li>
+          <li>
+            <a href="#" class="nav-menu-btn fz-6">聯絡我</a>
+          </li>
+        </ul>
+        <div class="nav-btn-wrap">
+          <button class="nav-btn hide-desktop">
+            <span class="material-symbols-rounded active">menu</span>
+            <span class="material-symbols-rounded">close</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <section class="hp-hero">
+      <div class="gl-container">
+        <div class="hero-content">
+          <h1 class="fz-h1 fw-title">Hi！我是 Noel</h1>
+          <p class="fz-5">
+            這只是一個切版練習<br>具有 10 年經驗的<br class="hide-desktop"><span class="gl-content-deco">資深 UI 設計師</span>兼<span class="gl-content-deco">前端工程師</span
+            ><br>技術雙修並行，<br class="hide-desktop">熱衷於優化使用者的網頁體驗
+          </p>
+          <p class="fz-6">WEB DEVELOPMENT / BRANDING / <br class="hide-desktop">UI / UX / APP DESIGN</p>
+          <div class="hero-social-media">
+            <a href="#">
+              <img src="image/instagram.svg" alt="Instagram" />
+            </a>
+            <a href="#">
+              <img src="image/facebook.svg" alt="Facebook" />
+            </a>
+            <a href="#">
+              <img src="image/youtube.svg" alt="Youtube" />
+            </a>
+            
+          </div>
+        </div>
+        <div class="hero-img">
+          <img src="image/hero-lg.png" alt="Hero 圖片" class="hide-mobile" />
+          <img src="image/hero-sm.png" alt="Hero 圖片" class="hide-desktop" />
+        </div>
+      </div>
+    </section>
+
+    <section class="hp-portfolio">
+      <div class="gl-container">
+        <h2 class="fz-h2 fw-title gl-title-deco">作品介紹</h2>
+      </div>
+
+      <ul class="portfolio-list">
+        <li class="portfolio-wrap">
+          <div class="gl-container">
+            <div class="portfolio-img">
+              <img src="image/homepage-work1.png" alt="星際旅行訂票平台作品圖片">
+            </div>
+            <div class="portfolio-content">
+              <h3 class="fz-h3 fw-title">星際旅行訂票平台</h3>
+              <p class="fz-6">悠遊宇宙的夢想，從這裡開始實現</p>
+              <ul class="portfolio-tag-wrap">
+                <li class="gl-tag fz-6">網頁設計</li>
+                <li class="gl-tag fz-6">響應式設計</li>
+                <li class="gl-tag fz-6">Bootstrap</li>
+              </ul>
+              <a href="#" class="gl-btn fw-title">完整介紹<span class="material-symbols-rounded">arrow_forward</span></a>
+            </div>
+          </div>
+        </li>
+
+        <li class="portfolio-wrap">
+          <div class="gl-container">
+            <div class="portfolio-img">
+            </div>
+            <div class="portfolio-content">
+              <h3 class="fz-h3 fw-title">理財 APP</h3>
+              <p class="fz-6">連動帳戶與行動支付，讓 AI 提供您最好的理財建議</p>
+              <ul class="portfolio-tag-wrap">
+                <li class="gl-tag fz-6">APP 設計</li>
+                <li class="gl-tag fz-6">iOS</li>
+                <li class="gl-tag fz-6">React</li>
+              </ul>
+              <a href="#" class="gl-btn fw-title">完整介紹<span class="material-symbols-rounded">arrow_forward</span></a>
+            </div>
+          </div>
+        </li>
+
+        <li class="portfolio-wrap">
+          <div class="gl-container">
+            <div class="portfolio-img">
+              <img src="image/homepage-work3.png" alt="醫美診所官網作品圖片">
+            </div>
+            <div class="portfolio-content">
+              <h3 class="fz-h3 fw-title">醫美診所官網</h3>
+              <p class="fz-6">永保青春的秘密，從粹究開始</p>
+              <ul class="portfolio-tag-wrap">
+                <li class="gl-tag fz-6">網頁設計</li>
+                <li class="gl-tag fz-6">響應式設計</li>
+                <li class="gl-tag fz-6">Wordpress</li>
+              </ul>
+              <a href="#" class="gl-btn fw-title">完整介紹<span class="material-symbols-rounded">arrow_forward</span></a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="gl-sec sec-service">
+      <div class="gl-container">
+        <h2 class="fz-h2 fw-title gl-title-deco">服務項目</h2>
+        <ul class="service-list">
+          <li class="fz-3 fw-title"><img src="image/service-item-visual.svg" alt="平面設計">平面設計</li>
+          <li class="fz-3 fw-title"><img src="image/service-item-ui.svg" alt="UI 設計">UI 設計</li>
+          <li class="fz-3 fw-title"><img src="image/service-item-html&css.svg" alt="切版服務">切版服務</li>
+          <li class="fz-3 fw-title"><img src="image/service-item-front-end.svg" alt="前端開發">前端開發</li>
+        </ul>
+        <div class="service-content">
+          <h3 class="fz-h3 fw-title">想要合作或了解更多？</h3>
+          <a href="" class="gl-btn fz-6 fw-title">
+            詳細內容與合作流程
+            <span class="material-symbols-rounded">
+              arrow_forward
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="gl-sec sec-carousel">
+      <div class="gl-container carousel">
+        <h2 class="fz-h2 fw-title gl-title-deco">精選文章</h2>
+        <ul class="carousel-inner">
+            <li class="carousel-item">
+              <a href="" class="article-wrap">
+                <img src="image/article-image1.png" alt="Vision Pro 登場！Vision Pro UI/UX 設計重點大公開 (上)">
+                <div class="article-content">
+                  <h3 class="fz-h5 fw-title">Vision Pro 登場！Vision Pro UI/UX 設計重點大公開 (上)</h3>
+                  <div class="article-info">
+                    <span class="gl-tag fz-6">UI/UX 新知</span>
+                    <span class="fz-6">2023/10/18</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="carousel-item">
+              <a href="" class="article-wrap">
+                <img src="image/article-image2.png" alt="給設計師和工程師的 Figma-Dev Mode 開發模式使用指南 (下)">
+                <div class="article-content">
+                  <h3 class="fz-h5 fw-title">給設計師和工程師的 Figma-Dev Mode 開發模式使用指南 (下)</h3>
+                  <div class="article-info">
+                    <span class="gl-tag fz-6">UI/UX 新知</span>
+                    <span class="fz-6">2023/10/18</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="carousel-item">
+              <a href="" class="article-wrap">
+                <img src="image/article-image3.png" alt="給設計師和工程師的 Figma-Dev Mode 開發模式使用指南 (上)">
+                <div class="article-content">
+                  <h3 class="fz-h5 fw-title">給設計師和工程師的 Figma-Dev Mode 開發模式使用指南 (上)</h3>
+                  <div class="article-info">
+                    <span class="gl-tag fz-6">UI/UX 新知</span>
+                    <span class="fz-6">2023/10/18</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="carousel-item">
+              <a href="" class="article-wrap">
+                <img src="image/article-image1.png" alt="Vision Pro 登場！Vision Pro UI/UX 設計重點大公開 (上)">
+                <div class="article-content">
+                  <h3 class="fz-h5 fw-title">Vision Pro 登場！Vision Pro UI/UX 設計重點大公開 (上)</h3>
+                  <div class="article-info">
+                    <span class="gl-tag fz-6">UI/UX 新知</span>
+                    <span class="fz-6">2023/10/18</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="carousel-item">
+              <a href="" class="article-wrap">
+                <img src="image/article-image2.png" alt="給設計師和工程師的 Figma-Dev Mode 開發模式使用指南 (下)">
+                <div class="article-content">
+                  <h3 class="fz-h5 fw-title">給設計師和工程師的 Figma-Dev Mode 開發模式使用指南 (下)</h3>
+                  <div class="article-info">
+                    <span class="gl-tag fz-6">UI/UX 新知</span>
+                    <span class="fz-6">2023/10/18</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="carousel-item">
+              <a href="" class="article-wrap">
+                <img src="image/article-image3.png" alt="給設計師和工程師的 Figma-Dev Mode 開發模式使用指南 (上)">
+                <div class="article-content">
+                  <h3 class="fz-h5 fw-title">給設計師和工程師的 Figma-Dev Mode 開發模式使用指南 (上)</h3>
+                  <div class="article-info">
+                    <span class="gl-tag fz-6">UI/UX 新知</span>
+                    <span class="fz-6">2023/10/18</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="carousel-item">
+              <a href="" class="article-wrap">
+                <img src="image/article-image1.png" alt="Vision Pro 登場！Vision Pro UI/UX 設計重點大公開 (上)">
+                <div class="article-content">
+                  <h3 class="fz-h5 fw-title">Vision Pro 登場！Vision Pro UI/UX 設計重點大公開 (上)</h3>
+                  <div class="article-info">
+                    <span class="gl-tag fz-6">UI/UX 新知</span>
+                    <span class="fz-6">2023/10/18</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="carousel-item">
+              <a href="" class="article-wrap">
+                <img src="image/article-image2.png" alt="給設計師和工程師的 Figma-Dev Mode 開發模式使用指南 (下)">
+                <div class="article-content">
+                  <h3 class="fz-h5 fw-title">給設計師和工程師的 Figma-Dev Mode 開發模式使用指南 (下)</h3>
+                  <div class="article-info">
+                    <span class="gl-tag fz-6">UI/UX 新知</span>
+                    <span class="fz-6">2023/10/18</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="carousel-item">
+              <a href="" class="article-wrap">
+                <img src="image/article-image3.png" alt="給設計師和工程師的 Figma-Dev Mode 開發模式使用指南 (上)">
+                <div class="article-content">
+                  <h3 class="fz-h5 fw-title">給設計師和工程師的 Figma-Dev Mode 開發模式使用指南 (上)</h3>
+                  <div class="article-info">
+                    <span class="gl-tag fz-6">UI/UX 新知</span>
+                    <span class="fz-6">2023/10/18</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="carousel-item">
+              <a href="" class="article-wrap">
+                <img src="image/article-image1.png" alt="Vision Pro 登場！Vision Pro UI/UX 設計重點大公開 (上)">
+                <div class="article-content">
+                  <h3 class="fz-h5 fw-title">Vision Pro 登場！Vision Pro UI/UX 設計重點大公開 (上)</h3>
+                  <div class="article-info">
+                    <span class="gl-tag fz-6">UI/UX 新知</span>
+                    <span class="fz-6">2023/10/18</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="carousel-item">
+              <a href="" class="article-wrap">
+                <img src="image/article-image2.png" alt="給設計師和工程師的 Figma-Dev Mode 開發模式使用指南 (下)">
+                <div class="article-content">
+                  <h3 class="fz-h5 fw-title">給設計師和工程師的 Figma-Dev Mode 開發模式使用指南 (下)</h3>
+                  <div class="article-info">
+                    <span class="gl-tag fz-6">UI/UX 新知</span>
+                    <span class="fz-6">2023/10/18</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="carousel-item">
+              <a href="" class="article-wrap">
+                <img src="image/article-image3.png" alt="給設計師和工程師的 Figma-Dev Mode 開發模式使用指南 (上)">
+                <div class="article-content">
+                  <h3 class="fz-h5 fw-title">給設計師和工程師的 Figma-Dev Mode 開發模式使用指南 (上)</h3>
+                  <div class="article-info">
+                    <span class="gl-tag fz-6">UI/UX 新知</span>
+                    <span class="fz-6">2023/10/18</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="carousel-item">
+              <a href="" class="article-wrap">
+                <img src="image/article-image1.png" alt="Vision Pro 登場！Vision Pro UI/UX 設計重點大公開 (上)">
+                <div class="article-content">
+                  <h3 class="fz-h5 fw-title">Vision Pro 登場！Vision Pro UI/UX 設計重點大公開 (上)</h3>
+                  <div class="article-info">
+                    <span class="gl-tag fz-6">UI/UX 新知</span>
+                    <span class="fz-6">2023/10/18</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="carousel-item">
+              <a href="" class="article-wrap">
+                <img src="image/article-image2.png" alt="給設計師和工程師的 Figma-Dev Mode 開發模式使用指南 (下)">
+                <div class="article-content">
+                  <h3 class="fz-h5 fw-title">給設計師和工程師的 Figma-Dev Mode 開發模式使用指南 (下)</h3>
+                  <div class="article-info">
+                    <span class="gl-tag fz-6">UI/UX 新知</span>
+                    <span class="fz-6">2023/10/18</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="carousel-item">
+              <a href="" class="article-wrap">
+                <img src="image/article-image3.png" alt="給設計師和工程師的 Figma-Dev Mode 開發模式使用指南 (上)">
+                <div class="article-content">
+                  <h3 class="fz-h5 fw-title">給設計師和工程師的 Figma-Dev Mode 開發模式使用指南 (上)</h3>
+                  <div class="article-info">
+                    <span class="gl-tag fz-6">UI/UX 新知</span>
+                    <span class="fz-6">2023/10/18</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+        </ul>
+        <ul class="carousel-indicators hide-mobile">
+            <li data-slide-to="0" class="active"></li>
+            <li data-slide-to="1"></li>
+            <li data-slide-to="2"></li>
+            <li data-slide-to="3"></li>
+            <li data-slide-to="4"></li>
+        </ul>
+        <a href="" class="gl-btn fz-6 fw-title hide-desktop">更多文章<span class="material-symbols-rounded">arrow_forward</span></a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="gl-container">
+        <div class="footer-content">
+          <img src="image/logo.svg" alt="Logo 圖片" />
+          <p class="fz-5">若有數位產品設計和開發相關問題<br />歡迎填寫表單，或直接與我聯絡！</p>
+          <a href="mailto:service@hexschool.com" class="fz-h5">service@hexschool.com</a>
+        </div>
+        <div class="footer-btn-wrap">
+          <a class="footer-btn fz-5 fw-title main">
+            <img src="image/list.svg" alt="列表圖示" />
+            填寫表單
+          </a>
+          <a class="footer-btn fz-5">
+            <img src="image/instagram.svg" alt="Instagram 圖示" />
+            hexschool_demo
+          </a>
+          <a class="footer-btn fz-5">
+            <img src="image/facebook.svg" alt="Facebook 圖示" />
+            hexschoolTW
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="gl-overlay"></div>
+  </body>
+</html>

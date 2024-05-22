@@ -1,0 +1,43 @@
+@import ../_variable
+@import ../_mixin
+
+.gl-catalog
+  display: flex
+  flex-direction: column
+  gap: 32px
+  align-self: stretch
+  min-width: 306px
+  padding: 80px
+  border-radius: 8px
+  background: $cl-basic-100
+  @include sz-mobile
+    flex-direction: row
+    flex-wrap: nowrap
+    width: calc( 100% + 24px )
+    padding: 20px 12px
+    border-radius: 0
+    margin: 0 -12px
+    overflow: hidden
+    overflow-x: scroll
+    scrollbar-width: none
+    position: sticky
+    top: 56px
+    z-index: 1
+    li
+      flex-shrink: 0
+
+.gl-catalog-item
+  width: fit-content
+  color: $cl-basic-600
+  padding-bottom: 4px
+  &:hover
+    box-shadow: 0 -2px 0 0 inset $cl-basic-500
+  &.active
+    color: $cl-basic-800
+    box-shadow: 0 -2px 0 0 inset $cl-basic-900
+  @include sz-mobile
+    padding-bottom: 6px
+    &:hover
+      box-shadow: 0 -1px 0 0 inset $cl-basic-500
+    &.active
+      box-shadow: 0 -1px 0 0 inset $cl-basic-900

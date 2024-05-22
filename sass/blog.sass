@@ -1,0 +1,67 @@
+// 全站設定
+@import _variable
+@import _mixin
+@import _base
+
+// header
+@import section/_header
+
+// section / catalog
+@import section/_catalog
+
+// section / blog  
+.blog-title-wrap
+  .fz-6
+    color: $cl-basic-500
+    text-align: center
+    margin-top: 24px
+
+.blog-content-wrap
+  @include flex(row-reverse, center, stretch)
+  gap: 24px
+  @include sz-mobile
+    flex-direction: column
+
+.blog-article-list
+  display: flex
+  flex-direction: column
+  gap: 64px
+
+.blog-article-item
+  display: flex
+  align-items: start
+  gap: 16px
+  @include sz-mobile
+    flex-direction: column
+  img
+    width: 306px
+    aspect-ratio: 306 / 220
+    object-fit: cover
+    border-radius: 8px
+    border: 1px solid $cl-basic-200
+    @include sz-mobile
+      width: 100%
+
+.blog-article-date
+  color: $cl-basic-600
+
+.blog-article-info
+  display: flex
+  align-items: center
+  gap: 16px
+  @include sz-mobile
+    justify-content: space-between
+
+.blog-article-content
+  .fz-h5, .blog-article-des
+    color: $cl-basic-700
+    margin-top: 16px
+  .blog-article-des
+    @include sz-mobile
+      @include ellipsis-line(3)
+
+// footer
+@import section/_footer
+
+// control
+@import _control
